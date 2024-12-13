@@ -1,10 +1,16 @@
-import { Button } from '@chakra-ui/react';
+import { Card, Flex } from '@chakra-ui/react';
+import Todos from './components/Todos';
 
 function App() {
   return (
-    <>
-      <Button>Test</Button>
-    </>
+    <Flex justify='center' align={'center'} pt={'10vh'}>
+      <Card.Root>
+        <Card.Body>
+          <Card.Title mb={'20px'}>UL To Do List</Card.Title>
+          <Todos />
+        </Card.Body>
+      </Card.Root>
+    </Flex>
   );
 }
 
